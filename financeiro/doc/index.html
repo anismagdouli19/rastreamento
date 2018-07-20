@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Documentation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <!-- Le styles -->
+        <link href="assets/css/bootstrap.css" rel="stylesheet" />
+        <link href="assets/css/bootstrap-responsive.css" rel="stylesheet" />
+        <link href="assets/google-code-prettify/prettify.css" rel="stylesheet" />
+        <link href="assets/css/docs.css" rel="stylesheet" />
+        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <!-- Le fav and touch icons -->
+        <link rel="shortcut icon" href="assets/img/favicon.ico" />
+        <style>
+            .pluginwrap { display:none; } 
+            .pluginwrapActive { display:block; }
+        </style>
+    </head>
+    <body>
+        <!-- Subhead
+            ================================================== -->
+        <header class="jumbotron subhead">
+            <div class="container container-narrow">
+                <h1>Script Cobrança - Accounting &amp; Billing Software</h1>
+                <p class="lead">Documentation For Script Cobrança</p>
+            </div>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                </div>
+            </div>
+            <div class="row" style="margin-top:20px;margin-bottom:20px">
+                <div class="span12">
+                    <table class="table table-bordered table-striped">
+                        <tbody>
+                            <tr>
+                              <td><h4>Table of Contents:</h4>
+                                <ul class="menu">
+                                  <li><a href="javascript:;" class="clickable" data-section="#getting-started">1. Get started with Script Cobrança</a></li>
+                                  <li><a href="javascript:;" class="clickable" data-section="#installing">2. Installing Script Cobrança</a></li>
+                                   <li><a href="javascript:;" class="clickable" data-section="#troubleshooting">3. Common Troubleshooting Tips</a></li>
+                                   <li><a href="javascript:;" class="clickable" data-section="#contacts">4. Contact Management</a></li>
+                                   <li><a href="javascript:;" class="clickable" data-section="#invoicing">5. Invoicing</a></li>
+                                   <li><a href="javascript:;" class="clickable" data-section="#recurring">6. Recurring Invoice Creation</a></li>
+                                   <li><a href="javascript:;" class="clickable" data-section="#reminders">7. Invoice Reminders & Notices</a></li>
+                                   <li><a href="javascript:;" class="clickable" data-section="#products">8. Managing Products & Services</a></li>
+                                   <li><a href="javascript:;" class="clickable" data-section="#accounts">9. Accounts</a></li>
+                                   <li><a href="javascript:;" class="clickable" data-section="#transactions">10. Transactions</a></li>
+                                   <li><a href="javascript:;" class="clickable" data-section="#general_settings">11. General Settings</a></li>
+                                   <li><a href="javascript:;" class="clickable" data-section="#localisation">12. Localisation</a></li>
+                                   <li><a href="javascript:;" class="clickable" data-section="#users">13. Managing Users</a></li>
+                                   <li><a href="javascript:;" class="clickable" data-section="#gateways">14. Manage Payment Gateways</a></li>
+                                   <li><a href="javascript:;" class="clickable" data-section="#methods">15. Payment Methods</a></li>
+                                   <li><a href="javascript:;" class="clickable" data-section="#categories">16. Income &amp; Expense Categories</a></li>
+                                   <li><a href="javascript:;" class="clickable" data-section="#tags">17. Managing Tags</a></li>
+                                   <li><a href="javascript:;" class="clickable" data-section="#tax">18. Sales Tax</a></li>
+                                   <li><a href="javascript:;" class="clickable" data-section="#email-settings">19. Email Settings</a></li>
+                                   <li><a href="javascript:;" class="clickable" data-section="#email-templates">20. Email Templates</a></li>
+                                   <li><a href="javascript:;" class="clickable" data-section="#automation">21. Automation Settings</a></li>
+                                   <li><a href="javascript:;" class="clickable" data-section="#reports">22. Reports</a></li>
+                                   <li><a href="javascript:;" class="clickable" data-section="#utilities">23. Utilities</a></li>
+                                   <li><a href="javascript:;" class="clickable" data-section="#upgrades">24. Upgrades/Maintenance</a></li>
+                                   <li><a href="javascript:;" class="clickable" data-section="#definitions">25. Definitions</a></li>
+                                   <li><a href="javascript:;" class="clickable" data-section="#end">26. End Of Documentation</a></li>
+
+
+
+
+                                </ul>                                </td>
+                            </tr>
+                           
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="span12">
+                    <section id="getting-started">
+                        <div class="page-header">
+                            <h1>1. Getting Started With Script Cobrança</h1>
+                            <a href="javascript:;">To top <i class="icon-arrow-up"></i></a>
+                        </div>
+
+                        <h3>
+                            System Requirements
+                        </h3>
+                        <p><strong>Most current web servers with PHP &amp; MySQL installed will be capable of running Script Cobrança.</strong></p>
+                        <p><strong>Minimum Requirements</strong></p>
+                        <ul>
+                          <li>Linux or Windows OS</li>
+                          <li>PHP Version 5.3+
+                            <ul>
+                              <li>Both PDO &amp; MySQLi Support</li>
+                              <li>GD2 Image Library</li>
+                            </ul>
+                          </li>
+                          <li>MySQL Version 4.1.x and above</li>
+                        </ul>
+                        <p><br>
+                          
+                        </p>
+
+                    </section>
+                </div>
+            </div>
+
+
+
+
+            <div class="row">
+                <div class="span12">
+                    <section id="installing">
+                        <div class="page-header">
+                            <h1>2. Installing Script Cobrança</h1>
+                            <a href="javascript:;">To top <i class="icon-arrow-up"></i></a>
+                        </div>
+                        <h3>With Built In Auto Installer</h3>
+                        <p>1. Unzip the contents of the zip file to a folder on your computer. You will find two folders, One folder contains documentation &amp; another is Script Cobrança.<br>
+                          2. Upload the Entire Script Cobrança folder to your website / server<br>
+                          3. Next you can rename the folder to whatever you like (billing, finance, manage etc..)<br>
+                          4. Now visit the uploaded location using your web browser to run the installer process.<br>
+                          5. Follow the instructions on screen to install Script Cobrança.<br>
+                          On Successful Installation, You will be redirected to Settings Page to change Username &amp; Password.<br>
+                          6. For security, Delete the install directory inside sysfrm folder.</p>
+                        <p><strong>7. If you see blank page after installation, it might be your compiled folder permissoon is not writable. Please make permission 755 compiled directory inside ui folder to store the generated contents from theme.</strong></p>
+                        <h3>Manual Install</h3>
+                        <p>To install manually, follow this steps-</p>
+                        <p>1. Unzip the contents of the zip file to a folder on your computer. You will find two folders, One folder contains documentation &amp; another is Script Cobrança.<br>
+                          2. Upload the Entire Script Cobrança folder to your website / server<br>
+                          3. Next you can rename the folder to whatever you like (billing, finance, manage etc..)<br>
+                          4. Sample config file is available here- sysfrm/config.sample.php . Rename it to config.php &amp; put it in same location (/sysfrm/config.php) Open config file using a text editor &amp; Put the database info and url.<br>
+                          5. Import database. Database file is located here- sysfrm/install/primary.sql <br>
+                          On Successful Installation, You will be redirected to Settings Page to change Username &amp; Password.<br>
+                          6. For security, Delete the install directory inside sysfrm folder.</p>
+
+                    </section>
+                </div>
+            </div>
+
+
+<div class="row">
+                <div class="span12">
+                    <section id="troubleshooting">
+                        <div class="page-header">
+                            <h1>3. Common Troubleshooting Tips</h1>
+                            <a href="javascript:;">To top <i class="icon-arrow-up"></i></a>
+                        </div>
+                        <h4>Blank Pages after Successful Installation</h4>
+                        <p>Blank pages can be caused by errors or if your server doesn&rsquo;t meet the minimum requirements for Script Cobrança. To see exactly what the issue is, you need to ensure display_errors are set to On in your servers php.ini file and the error_reporting level set to E_All. Then add the line to your Script Cobrança config.php file (located on sysfrm/ floder) and revisit the page:</p>
+                        <div>
+                          <div id="highlighter_165714">
+                            <table border="0" cellpadding="0" cellspacing="0">
+                              <tbody>
+                                <tr>
+                                  <td></td>
+                                  <td><div>
+                                    <div><pre>error_reporting(E_ALL);</pre></div>
+                                  </div></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <p>An error message occurring will be shown if it&rsquo;s a PHP error. Once finished testing, remove the line again from the Script Cobrança config file.</p>
+                        <p>Here is the common reason for this error-</p>
+                        <p>Let&rsquo;s say you have uploaded your website by login using root in your server but the folder owner must be www-data, so PHP will not be able to write file in ui/compiled folder.<br>
+                          Here is the example command to change folder owner: sudo -R chown www-data:www-data /var/www/billing/</p>
+                        <p>&nbsp;</p>
+
+
+                    </section>
+                </div>
+          </div>
+
+          <div class="row">
+                <div class="span12">
+                    <section id="contacts">
+                        <div class="page-header">
+                            <h1>4. Contact Management</h1>
+                            <a href="javascript:;">To top <i class="icon-arrow-up"></i></a>
+                        </div>
+                        <div>
+                          <div>
+                           
+                            <p><strong>Add New Contact:</strong> To Add New Contact Navigate to CRM -&gt; Add New Contact</p>
+                            <p><strong>List Contacts:</strong>  To view All contacts Navigate CRM -&gt; List Contacts</p>
+                            <p><strong>View Contact:</strong> Click the View Button from Contacts List to view Contact</p>
+                            <p>&nbsp;</p>
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            <div><img  src="assets/img/file.jpeg" alt="contact-activity-doc"></div>
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            <p>&nbsp;</p>
+                            <p><strong>Contact Summary:</strong> Summary of Contact. Total Income, Total Expense etc.</p>
+                            <p><strong>Contact Invoices:</strong>  List Invoices for specific Contact</p>
+                            <p><strong>Transactions:</strong>  List Transactions for specific Contact</p>
+                            <p><strong>Email:</strong>  Send Email to Contact. And List Emails that sent before.</p>
+                            <p>&nbsp;</p>
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            <div><img  src="assets/img/Contact Management.jpeg" alt="contact-send-email"></div>
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            <p>&nbsp;</p>
+                            <p><strong>Edit:</strong>  Navigate this Tab to Edit Contact</p>
+                            <p><strong>More: </strong> Navigate More Tab to add image to contact &amp; social networking profile. You may also Set Gravatar as Contact Image from here.</p>
+                          </div>
+                        </div>
+                        <p>&nbsp;</p>
+
+
+                    </section>
+                    
+
+                    
+                    
+                    
+              </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <section id="invoicing">
+                        <div class="page-header">
+                            <h1>5. Invoicing</h1>
+                            <a href="javascript:;">To top <i class="icon-arrow-up"></i></a>
+                        </div>
+                        <div>
+                            <div>
+
+                                <div>
+                                    <div>
+                                        <h3>Invoicing</h3>
+                                        <p><strong>Add New Invoice:</strong> To Add New Invoice Navigate to Sales -&gt; Add New Invoice</p>
+                                        <p>&nbsp;</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div><img  src="assets/img/add-invoice.jpeg" alt="create-new-invoice"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <p>&nbsp;</p>
+                                        <p><strong>List Invoices:</strong>  Navigate to Sales -&gt; Invoices</p>
+                                        <p>&nbsp;</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div><img src="assets/img/list-invoice.jpeg" alt="list-invoices"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <p>&nbsp;</p>
+                                        <p><strong>View Invoice:</strong>  Click The View Button to view Invoice</p>
+                                        <p>&nbsp;</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div><img  src="assets/img/view-invoice.jpeg" alt="view-invoice"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <p>&nbsp;</p>
+                                        <p><strong>Send Email:</strong>  To Send Email Reminder to Customer.</p>
+                                        <p><strong>Mark As:</strong> With this Group Button you may Mark Invoice as Paid, Unpaid, Partially Paid etc.</p>
+                                        <p><strong>Add Payment:</strong> By Clicking this button a Modal Window will be open to Add Payment to Invoice. Once you have added a payment it will be appeared in transactions. If you add payment full (Total Invoice Due Amount), it will be automatically marked as Paid, Otherwise if you add less amount then invoice amount, It will be marked as Partially Paid.</p>
+                                        <p><strong>PDF:</strong>  By clicking view PDF link, the invoice will be shown inside browser by embedding pdf. If you click download, the browser will be forced to download.</p>
+                                        <p><strong>Print:</strong>  By clicking this link an another window will be open with printer friendly version of this invoice.</p>
+                                    </div>
+                                </div>
+                                <p>&nbsp;</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <section id="recurring">
+                        <div class="page-header">
+                            <h1>6. Recurring Invoice Creation</h1>
+                            <a href="javascript:;">To top <i class="icon-arrow-up"></i></a>
+                        </div>
+                        <div>
+                          <div>
+                            <p><strong>To Create Recurring Invoice, Navigate to Sales -&gt; New Recurring Invoice</strong></p>
+                            <p>&nbsp;</p>
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            <div><img src="assets/img/generate-recurring-invoice.jpeg" alt="create-recurring-invoice"></div>
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            <p>&nbsp;</p>
+                            <p><strong>Repeat Every:</strong> Set the Repetition interval. For Example, if you choose Monthly, Next invoice will be generated after 1 month later. If you choose Yearly, next invoice will be generated after 1 Year.</p>
+                            <p>Available Recurring Interval-</p>
+                            <p>Week<br>
+                              2 Weeks<br>
+                              Month<br>
+                              2 Months<br>
+                              3 Months<br>
+                              6 Months<br>
+                              Year<br>
+                              2 Years<br>
+                              3 Years</p>
+                          </div>
+                        </div>
+                        <h3>&nbsp;</h3>
+
+                    </section>
+                </div>
+            </div>
+          <div class="row">
+                <div class="span12">
+                    <section id="reminders">
+                        <div class="page-header">
+                            <h1>7. Invoice Reminders &amp; Notices</h1>
+                            <a href="javascript:;">To top <i class="icon-arrow-up"></i></a>
+                        </div>
+                        <div>
+                          <div>
+                            <h3>Send Invoice Notice &amp; Payment Reminder to Customer</h3>
+                            <p><strong>To send invoice creation notice &amp; reminder, Navigate Sales -&gt; Invoices. Click the View Button for specific invoice. You will find a button named &lsquo;Send Email&rsquo; on Top Right Corner.</strong></p>
+                            <p>&nbsp;</p>
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            <div><img src="assets/img/invoice-send-email.jpeg" alt="invoice-send-email"></div>
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            <p><strong>Available Email Options:</strong></p>
+                            <p>Invoice Created<br>
+                              Invoice Payment Reminder<br>
+                              Invoice Overdue Notice<br>
+                              Invoice Payment Confirmation<br>
+                              Invoice Refund Confirmation</p>
+                            <p><strong>Email will be generated Automatically based on your Email Templates. You may edit email before sent from popup modal window.</strong></p>
+                            <p>&nbsp;</p>
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            <div><img src="assets/img/email-tpl.jpeg" alt="send-invoice-reminder"></div>
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            <p>To Edit Email Templates Navigate, Settings -&gt; Email Templates</p>
+                          </div>
+                        </div>
+                        <p>&nbsp;</p>
+                    </section>
+              </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                  <section id="products">
+                    <div class="page-header">
+                            <h1>8. Managing Products &amp; Services</h1>
+                            <a href="javascript:;">To top <i class="icon-arrow-up"></i></a>
+                      </div>
+                      <div>
+                        <div>
+                          <p><strong>Add New Product:</strong> To Add New Product Navigate to Products &amp; Services -&gt; Add New Product</p>
+                          <p><strong>Add New Service:</strong> To Add New Service Navigate to Products &amp; Services -&gt; Add New Service</p>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                      <div>
+                        <div>
+                          <div><img src="assets/img/add-product.jpg" alt="add-product"></div>
+                        </div>
+                      </div>
+                      <div>
+                        <div>
+                          <p>&nbsp;</p>
+                          <p><strong>List Products:</strong> To view Available Products Navigate to Products &amp; Services -&gt; Products</p>
+                          <p><strong>List Services:</strong> To view Available Services Navigate to Products &amp; Services -&gt; Services</p>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                      <div>
+                        <div>
+                          <div><img src="assets/img/list-services.jpeg" alt="ps-list"></div>
+                        </div>
+                      </div>
+                      <div>
+                        <div>
+                          <p>&nbsp;</p>
+                          <p>Products &amp; Services can be used as Invoice Item.</p>
+                        </div>
+                      </div>
+                      <p>&nbsp;</p>
+                    </section>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <section id="accounts">
+                        <div class="page-header">
+                            <h1>9. Accounts</h1>
+                            <a href="javascript:;">To top <i class="icon-arrow-up"></i></a>
+                        </div>
+                        <p>
+                            Accounts are how you keep track of your bank accounts/ cash accounts in Script Cobrança.
+                            By adding an account, you’ll be able to store and view information about your accounts, and track and analyse transaction history.
+                            You can also view total cash in all accounts, use in repeating transactions.
+                        </p>
+                      <h3>Creating Accounts</h3>
+                        <p>
+                        To create a new account, click Ad An Account Sub Menu under Bank &amp; Cash menu. <br>
+                        The Add New Account Form will look like this-
+                            <br><br>
+                            <br>
+                            <img src="assets/img/add-account.jpg">
+
+                        </p>
+                        <p>&nbsp;</p>
+                        <p>
+                            <strong>Account Title: </strong> Put a Name of your Bank / Cash Account. (e.g. XYZ Bank, Cash in Home etc. )<br><br>
+                            <strong>Description: </strong> Put a description of your account. (e.g. Your Account Number, Branch etc.)<br><br>
+                            <strong>Initial Balance: </strong> Put the amount of your current balance. (When you adding your account, you will have to put your current balance.
+                            From next time, account balance will be calculated automatically based on your transactions.)
+
+
+                      </p>
+
+                        <h3>Managing Accounts</h3>
+                        To manage your bank accounts go to List Accounts sub menu under Bank &amp; Cash Menu. Here your will be able to edit or delete accounts.
+
+                    </section>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <section id="transactions">
+                        <div class="page-header">
+                            <h1>10. Transactions</h1>
+                            <a href="javascript:;">To top <i class="icon-arrow-up"></i></a>
+                        </div>
+                        <p>
+                           Under Transactions menu, you will be able to Add Deposit (Or Income), Add Expense. Account to Account Transfer. View All Transactions etc.
+                        </p>
+                        <h3>Add Deposit (Or Income)</h3>
+                        <p>
+                            To add a entry of income transaction, click Ad Deposit Sub Menu under Transactions. <br>
+                            The Add Deposit Form will look like this-
+                            <br><br>
+                            <br>
+                            <img src="assets/img/add-deposit.jpg">
+
+                        </p>
+                        <p>
+                            <strong>Account: </strong> Choose the Account you are depositing.<br><br>
+                            <strong>Date: </strong> Date of the transaction<br><br>
+                            <strong>Amount: </strong> Amount of this transaction<br><br>
+                            <strong>Payer: </strong> The Payer of this income (e.g. Your employer, your client or somebody who is paying you. You can
+                            modify payee from Settings -> Payee)<br><br>
+                            <strong>Category: </strong> The category of this transaction. (You can modify categories from Settings -> Income Categories<br><br>
+                            <strong>Payment Method: </strong> You can define payment methods here. (e.g. - Cash, Check, Paypal etc.)<br><br>
+                            <strong>Ref: </strong> You can add a referance of this transaction here. (e.g. - Check number, Transaction id etc.)<br><br>
+                            <strong>Description: </strong> Put description of this transaction.<br><br>
+
+
+
+                        </p>
+
+                        <h3>Adding Expense</h3>
+                        <p> Sameway, You will be able to add expense. To Add Expense, Go to Transactions -> Add Expense</p>
+                        <h3>Account to Account Transfer.</h3>
+                        <p> Go to Transactions -> Transfer. With this you can transfer between accounts. For example you will use this when you are withdrawing fund from Bank Account and keeping it on Cash.
+                        </p>
+
+                    </section>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <section id="general_settings">
+                        <div class="page-header">
+                            <h1>11. General Settings</h1>
+                            <a href="javascript:;">To top <i class="icon-arrow-up"></i></a>
+                        </div>
+                        <div>
+                          <div>
+                            <p><strong>Here you will find most common Settings</strong></p>
+                            <p>To Navigate General Settings Go – Settings -&gt; General Settings</p>
+                            <p>&nbsp;</p>
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            <div><img src="assets/img/general-settings.jpeg" alt="general-settings"></div>
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            <p>&nbsp;</p>
+                            <p><strong>Changing Logo:</strong></p>
+                            <p>To change logo Navigate Settings -&gt; General Settings. From this page you can upload new logo.</p>
+                            <p>This logo will be appeared in the application header, invoice view page, generated pdf invoice etc.</p>
+                            <p>&nbsp;</p>
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            <div><img src="assets/img/changing-logo.jpg" alt="changing-logo"></div>
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            <p>&nbsp;</p>
+                            <p><strong>You may also change logo by replacing file -</strong></p>
+                            <p>&nbsp;</p>
+                            <pre>sysfrm/uploads/system/logo.png</pre>
+                          </div>
+                        </div>
+                        <p>&nbsp;</p></section>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <section id="localisation">
+                        <div class="page-header">
+                            <h1>12. Localisation</h1>
+                            <a href="javascript:;">To top <i class="icon-arrow-up"></i></a>
+                        </div>
+                        <div>
+                          <div>
+                           
+                            <p>From here you can adapt Script Cobrança to your language, date format, timezone, currency, currency display format etc.</p>
+                            <p>Here you will find the following settings option:</p>
+                            <p>&nbsp;</p>
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            <div><img src="assets/img/Localisation.jpeg" alt="localisation-settings"></div>
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            <p>&nbsp;</p>
+                            <p><strong>Timezone:</strong> Set timezone based on area you live.</p>
+                            <p><strong>Default Country:</strong>  Set the default country. Based on this settings the country will be selected by default when you add new Contact.</p>
+                            <p><strong>Default Language:</strong> Change Application Language from here. Please note that, this software is not translated to other language yet. Currently Only available language is English. But if you want to translate this to your language, you can do so by editing translation file. You may contact us regarding this to learn more.</p>
+                            <p><strong>Decimal Point:</strong> Set the decimal point based on your local currency. (e.g. – &ldquo;.&rdquo;). You may also keep it blank.</p>
+                            <p><strong>Thousands Separator:</strong> Set the thousands Separator based on your local currency. (e.g. – &ldquo;,&rdquo;). You may also keep it blank.</p>
+                            <p><strong>Currency Code:</strong> Set Currency code or Symbol based on your local currency or currency you would like to use this software.</p>
+                          </div>
+                        </div>
+                        <p>&nbsp;</p></section>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <section id="users">
+                        <div class="page-header">
+                            <h1>13. Managing Users</h1>
+                            <a href="javascript:;">To top <i class="icon-arrow-up"></i></a>
+                        </div>
+                        <div>
+                          <div>
+                            <p><strong>List Users:</strong> Navigate to Settings -&gt; Manage Users. Here you will find list of users. Also a button to Add New User</p>
+                            <p><strong>Adding New User to the System:</strong>  To Add New User- Navigate to Settings -&gt; Manage Users. Then Click &ldquo;Add New User Button&rdquo;</p>
+                            <p>&nbsp;</p>
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            <div><img src="assets/img/managing-users.jpg" alt="settings-add-new-user"></div>
+                          </div>
+                        </div>
+                      <div>
+                          <div>
+                            <p>&nbsp;</p>
+                            <p><strong>Username:</strong> Enter the desired username for New User. Username must be an email address</p>
+                            <p><strong>Full Name:</strong>  Enter the Full Name of User.</p>
+                            <p><strong>User Type:</strong>  Set the type for the user-<br>
+                              Full Administrator- User will have full access to the application<br>
+                              Employee- User will not see the Settings menu &amp; will not able to see Settings Page.</p>
+                            <p><strong>Password:</strong> Enter desired password for this new user.</p>
+                            <p><strong>Confirm Password:</strong> Type the password again.                          </p>
+                        </div>
+                        </div>
+                        <p>&nbsp;</p></section>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <section id="gateways">
+                        <div class="page-header">
+                            <h1>14. Manage Payment Gateways</h1>
+                            <a href="javascript:;">To top <i class="icon-arrow-up"></i></a>
+                        </div>
+                        <div>
+                          <div>
+                            <p><strong>To Manage Payment Gateways Navigate to – Settings -&gt; Payment Gateways</strong></p>
+                            <p>Here you will find list of Payment Gateways-</p>
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            <div><img src="assets/img/payment-gateways.jpeg" alt="list-payment-gateways"></div>
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            <p><strong>Reorder Position:</strong> You can Re order Payment Gateway Position by clicking Re Order Position Button. Based on this order Payment Gateway will be displayed in customer invoice view page.</p>
+                            <h3>Available Payment Gateways:</h3>
+                            <p>– Paypal<br>
+                              – Stripe<br>
+                              – Manual or Bank / Cash<br>
+                              – Authorize.net</p>
+                            <h3>Paypal</h3>
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            <div><img src="assets/img/paypal.jpeg" alt="paypal-settings"></div>
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            <p><strong>Name:</strong>  Payment Gateway Name- Paypal</p>
+                            <p><strong>Settings Name: </strong> Paypal Email</p>
+                            <p>Above two option is not editable &amp; used by System.</p>
+                            <p><strong>Value:</strong> Set your Paypal Email</p>
+                            <p><strong>Currency Code:</strong> PayPal uses 3-character ISO-4217 codes for specifying currencies in fields and variables. Use the code here. (For Example for US Dollar – USD, For Euro – EUR, For Australian Dollar – AUD).</p>
+                            <p>List of Supported Currencies is available here- <a href="https://developer.paypal.com/docs/classic/api/currency_codes/" target="_blank">https://developer.paypal.com/docs/classic/api/currency_codes/</a></p>
+                            <p><strong>Conversion Rate:</strong> Default value is 1 &amp; please keep it 1 if your system currency and paypal payments receiving currency is same. You may change this if your system currency is different from paypal payments receiving currency (For Example, if your system currency is BDT &amp; you want to convert BDT to USD for invoice amount, you may set it 80 as 1 USD = 80 BDT)</p>
+                            <h3>Stripe</h3>
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            <div><img width="620" height="656" src="assets/img/stripe.jpeg" alt="stripe-settings"></div>
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            <p><strong>Name:</strong>  Payment Gateway Name- Stripe</p>
+                            <p><strong>Settings Name: </strong> API Key</p>
+                            <p>Above two option is not editable &amp; used by System.</p>
+                            <p><strong>Value:</strong> Set your Stripe API Key</p>
+                            <p><strong>Currency Code:</strong> Stripe uses 3-character ISO-4217 codes for specifying currencies in fields and variables. Use the code here. (For Example for US Dollar – USD, For Euro – EUR, For Australian Dollar – AUD).</p>
+                            <h3>Manual Payment</h3>
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            <div><img src="assets/img/manual-payment.jpeg" alt="settings-pg-bank-cash"></div>
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            <p>&nbsp;</p>
+                            <p>With this Payment Gateway option you can instruct to your customer to pay manually or give bank info to direct deposit.</p>
+                            <p><strong>Name:</strong>  Payment Gateway Name- Bank / Cash</p>
+                            <p><strong>Settings Name: </strong> Instructions</p>
+                            <p>Above two option is not editable &amp; used by System.</p>
+                            <p><strong>Value:</strong> Set your instructions for manual payment (e.g. Your Bank Info)</p>
+                            <p>If you do not want this, simply set this status to Inactive.</p>
+                            <h3>Authorize.net</h3>
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            <div><img src="assets/img/authorize_net.jpeg" alt="pg-authorize_net"></div>
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            <p>&nbsp;</p>
+                            <p><strong>Name:</strong>  Payment Gateway Name- Authorize.net</p>
+                            <p><strong>Settings Name: </strong> API_LOGIN_ID</p>
+                            <p>Above two option is not editable &amp; used by System.</p>
+                            <p><strong>Value:</strong> Set your API_LOGIN_ID</p>
+                            <p><strong>Custom Param 1:</strong> Insert Transaction Key Here</p>
+                            <p>&nbsp;</p>
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            <h3>Currency Name with 3-character ISO-4217 codes for Paypal &amp; Stripe</h3>
+                            <ul>
+                              <li>AED: United Arab Emirates Dirham</li>
+                              <li>AFN: Afghan Afghani</li>
+                              <li>ALL: Albanian Lek</li>
+                              <li>AMD: Armenian Dram</li>
+                              <li>ANG: Netherlands Antillean Gulden</li>
+                              <li>AOA: Angolan Kwanza</li>
+                              <li>ARS: Argentine Peso</li>
+                              <li>AUD: Australian Dollar</li>
+                              <li>AWG: Aruban Florin</li>
+                              <li>AZN: Azerbaijani Manat</li>
+                              <li>BAM: Bosnia &amp; Herzegovina Convertible Mark</li>
+                              <li>BBD: Barbadian Dollar</li>
+                              <li>BDT: Bangladeshi Taka</li>
+                              <li>BGN: Bulgarian Lev</li>
+                              <li>BIF: Burundian Franc</li>
+                              <li>BMD: Bermudian Dollar</li>
+                              <li>BND: Brunei Dollar</li>
+                              <li>BOB: Bolivian Boliviano</li>
+                              <li>BRL: Brazilian Real</li>
+                              <li>BSD: Bahamian Dollar</li>
+                              <li>BWP: Botswana Pula</li>
+                              <li>BZD: Belize Dollar</li>
+                              <li>CAD: Canadian Dollar</li>
+                              <li>CDF: Congolese Franc</li>
+                              <li>CHF: Swiss Franc</li>
+                              <li>CLP: Chilean Peso</li>
+                              <li>CNY: Chinese Renminbi Yuan</li>
+                              <li>COP: Colombian Peso</li>
+                              <li>CRC: Costa Rican Colón</li>
+                              <li>CVE: Cape Verdean Escudo</li>
+                              <li>CZK: Czech Koruna</li>
+                              <li>DJF: Djiboutian Franc</li>
+                              <li>DKK: Danish Krone</li>
+                              <li>DOP: Dominican Peso</li>
+                              <li>DZD: Algerian Dinar</li>
+                              <li>EEK: Estonian Kroon</li>
+                              <li>EGP: Egyptian Pound</li>
+                              <li>ETB: Ethiopian Birr</li>
+                              <li>EUR: Euro</li>
+                              <li>FJD: Fijian Dollar</li>
+                              <li>FKP: Falkland Islands Pound</li>
+                              <li>GBP: British Pound</li>
+                              <li>GEL: Georgian Lari</li>
+                              <li>GIP: Gibraltar Pound</li>
+                              <li>GMD: Gambian Dalasi</li>
+                              <li>GNF: Guinean Franc</li>
+                              <li>GTQ: Guatemalan Quetzal</li>
+                              <li>GYD: Guyanese Dollar</li>
+                              <li>HKD: Hong Kong Dollar</li>
+                              <li>HNL: Honduran Lempira</li>
+                              <li>HRK: Croatian Kuna</li>
+                              <li>HTG: Haitian Gourde</li>
+                              <li>HUF: Hungarian Forint</li>
+                              <li>IDR: Indonesian Rupiah</li>
+                              <li>ILS: Israeli New Sheqel</li>
+                              <li>INR: Indian Rupee</li>
+                              <li>ISK: Icelandic Króna</li>
+                              <li>JMD: Jamaican Dollar</li>
+                              <li>JPY: Japanese Yen</li>
+                              <li>KES: Kenyan Shilling</li>
+                              <li>KGS: Kyrgyzstani Som</li>
+                              <li>KHR: Cambodian Riel</li>
+                              <li>KMF: Comorian Franc</li>
+                              <li>KRW: South Korean Won</li>
+                              <li>KYD: Cayman Islands Dollar</li>
+                              <li>KZT: Kazakhstani Tenge</li>
+                              <li>LAK: Lao Kip</li>
+                              <li>LBP: Lebanese Pound</li>
+                              <li>LKR: Sri Lankan Rupee</li>
+                              <li>LRD: Liberian Dollar</li>
+                              <li>LSL: Lesotho Loti</li>
+                              <li>LTL: Lithuanian Litas</li>
+                              <li>LVL: Latvian Lats</li>
+                              <li>MAD: Moroccan Dirham</li>
+                              <li>MDL: Moldovan Leu</li>
+                              <li>MGA: Malagasy Ariary</li>
+                              <li>MKD: Macedonian Denar</li>
+                              <li>MNT: Mongolian Tögrög</li>
+                              <li>MOP: Macanese Pataca</li>
+                              <li>MRO: Mauritanian Ouguiya</li>
+                              <li>MUR: Mauritian Rupee</li>
+                              <li>MVR: Maldivian Rufiyaa</li>
+                              <li>MWK: Malawian Kwacha</li>
+                              <li>MXN: Mexican Peso</li>
+                              <li>MYR: Malaysian Ringgit</li>
+                              <li>MZN: Mozambican Metical</li>
+                              <li>NAD: Namibian Dollar</li>
+                              <li>NGN: Nigerian Naira</li>
+                              <li>NIO: Nicaraguan Córdoba</li>
+                              <li>NOK: Norwegian Krone</li>
+                              <li>NPR: Nepalese Rupee</li>
+                              <li>NZD: New Zealand Dollar</li>
+                              <li>PAB: Panamanian Balboa</li>
+                              <li>PEN: Peruvian Nuevo Sol</li>
+                              <li>PGK: Papua New Guinean Kina</li>
+                              <li>PHP: Philippine Peso</li>
+                              <li>PKR: Pakistani Rupee</li>
+                              <li>PLN: Polish Złoty</li>
+                              <li>PYG: Paraguayan Guaraní</li>
+                              <li>QAR: Qatari Riyal</li>
+                              <li>RON: Romanian Leu</li>
+                              <li>RSD: Serbian Dinar</li>
+                              <li>RUB: Russian Ruble</li>
+                              <li>RWF: Rwandan Franc</li>
+                              <li>SAR: Saudi Riyal</li>
+                              <li>SBD: Solomon Islands Dollar</li>
+                              <li>SCR: Seychellois Rupee</li>
+                              <li>SEK: Swedish Krona</li>
+                              <li>SGD: Singapore Dollar</li>
+                              <li>SHP: Saint Helenian Pound</li>
+                              <li>SLL: Sierra Leonean Leone</li>
+                              <li>SOS: Somali Shilling</li>
+                              <li>SRD: Surinamese Dollar</li>
+                              <li>STD: São Tomé and Príncipe Dobra</li>
+                              <li>SVC: Salvadoran Colón</li>
+                              <li>SZL: Swazi Lilangeni</li>
+                              <li>THB: Thai Baht</li>
+                              <li>TJS: Tajikistani Somoni</li>
+                              <li>TOP: Tongan Paʻanga</li>
+                              <li>TRY: Turkish Lira</li>
+                              <li>TTD: Trinidad and Tobago Dollar</li>
+                              <li>TWD: New Taiwan Dollar</li>
+                              <li>TZS: Tanzanian Shilling</li>
+                              <li>UAH: Ukrainian Hryvnia</li>
+                              <li>UGX: Ugandan Shilling</li>
+                              <li>USD: United States Dollar</li>
+                              <li>UYU: Uruguayan Peso</li>
+                              <li>UZS: Uzbekistani Som</li>
+                              <li>VND: Vietnamese Đồng</li>
+                              <li>VUV: Vanuatu Vatu</li>
+                              <li>WST: Samoan Tala</li>
+                              <li>XAF: Central African Cfa Franc</li>
+                              <li>XCD: East Caribbean Dollar</li>
+                              <li>XOF: West African Cfa Franc</li>
+                              <li>XPF: Cfp Franc</li>
+                              <li>YER: Yemeni Rial</li>
+                              <li>ZAR: South African Rand</li>
+                              <li>ZMW: Zambian Kwacha</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <p>&nbsp;</p></section>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <section id="methods">
+                        <div class="page-header">
+                            <h1>15. Payment Methods</h1>
+                            <a href="javascript:;">To top <i class="icon-arrow-up"></i></a>
+                        </div>
+                        <p>To Add Edit Payment Methods Navigate to- Settings -&gt; Payment Methods</p>
+                        <p>Please Note that, this is not related to Payment Gateways. You will use this to record deposit, expense transactions record. For Payment Gateways Navigate to- Settings -&gt; Payment Gateways.</p>
+                    </section>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <section id="categories">
+                        <div class="page-header">
+                            <h1>16. Income &amp; Expense Categories</h1>
+                            <a href="javascript:;">To top <i class="icon-arrow-up"></i></a>
+                        </div>
+                        <div>
+                          <div>
+                            <p>Categories can be user to record transactions (Income/Expense)</p>
+                            <p>Income Categories: Navigate to- Settings -&gt; Income Categories</p>
+                            <p>Expense Categories: Settings -&gt; Expense Categories</p>
+                            <p> </p>
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            <div><img src="assets/img/categories.jpeg" alt="manage-categories"></div>
+                          </div>
+                        </div>
+                        <p>&nbsp;</p>
+                    </section>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <section id="tags">
+                        <div class="page-header">
+                            <h1>17. Managing Tags</h1>
+                            <a href="javascript:;">To top <i class="icon-arrow-up"></i></a>
+                        </div>
+                        <div>
+                          <div>
+                            <p>You can tag a transaction, a Contact etc.</p>
+                            <p>You can tag a transaction or contact simply by typing the tag name. If tag is not available in database table, it will be created automatically.</p>
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            <div><img width="577" height="51" src="assets/img/set-tags.jpg" alt="set-tags"></div>
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            <p><strong>Deleting Tags:</strong> To Delete an Existing Tag Navigate to – Settings -&gt; Manage Tags then click Delete Button.</p>
+                          </div>
+                        </div>
+                        <p>&nbsp;</p></section>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <section id="tax">
+                        <div class="page-header">
+                            <h1>18. Sales Tax</h1>
+                            <a href="javascript:;">To top <i class="icon-arrow-up"></i></a>
+                        </div>
+                      <div>
+                          <div>
+                            <div>
+                              <div>
+                                <p><strong>List:</strong> Navigate to Settings -&gt; Sales TAX. Here you will find list of Taxes. Also a button to Add New TAX rule.</p>
+                                <p><strong>Adding New TAX rate to the System:</strong>  To Add New TAX – Navigate to Settings -&gt; Sales TAX. Then Click &ldquo;Add TAX&rdquo; Button.</p>
+                                <p>&nbsp;</p>
+                              </div>
+                            </div>
+                            <div>
+                              <div>
+                                <div><img width="819" height="317" src="assets/img/settings-tax.jpg" alt="settings-tax"></div>
+                              </div>
+                            </div>
+                      <p>&nbsp;</p></div></div><div><div>
+                          </div>
+                        </div>
+                        <p>&nbsp;</p></section>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                  <section id="email-settings">
+                        <div class="page-header">
+                            <h1>19. Email Settings</h1>
+                            <a href="javascript:;">To top <i class="icon-arrow-up"></i></a>
+                        </div>
+                        <p><strong>To Access Script Cobrança Email Settings Go – Settings -&gt; Email Settings</strong></p>
+                        <p>You can configure outgoing email settings to use built in php mail() function or You can send email through SMTP.</p>
+                        <p><strong>Send Email using PHP built in mail() function:</strong><br>
+                          To send email though php built in mail() function, simply choose this option. Put system email (e.g. you@yourcompany.com).</p>
+                        <p><strong>Send Email using SMTP Server:</strong><br>
+                          Choose SMTP from drop down list. Choosing this a few more option will be appeared.</p>
+                        <p>SMTP Host: Put SMTP host<br>
+                          SMTP Username: Put username for your smtp account<br>
+                          SMTP Password: Put Password<br>
+                          Port: Enter the port number for your smtp provider<br>
+                          SMTP Secure: Choose from TLS or SSL</p>
+                        <p><strong>Use Google&rsquo;s SMTP Server:<br>
+                        </strong>To send email using Google&rsquo;s SMTP server choose SMTP from the email settings.</p>
+                        <p>Google&rsquo;s SMTP server requires authentication, so here&rsquo;s how to set it up:</p>
+                        <p>SMTP server (i.e., outgoing mail): smtp.gmail.com<br>
+                          SMTP username: Your full Gmail or Google Apps email address (e.g. example@gmail.com or example@yourdomain.com)<br>
+                          SMTP password: Your Gmail or Google Apps email password<br>
+                          SMTP port: 587<br>
+                          SMTP TLS/SSL required: TLS<br>
+                          In order to store a copy of outgoing emails in your Gmail or Google Apps Sent folder, log into your Gmail or Google Apps email Settings and:<br>
+                          Click on the Forwarding/IMAP tab and scroll down to the IMAP Access section: IMAP must be enabled in order for emails to be properly copied to your sent folder.</p>
+                        <p>Please note that Google automatically rewrites the From line of any email you send via its SMTP server to the default Send mail as email address in your Gmail or Google Apps email account Settings. You need to be aware of this nuance because it affects the presentation of your email, from the point of view of the recepient, and it may also affect the Reply-To setting of some programs.</p>
+                        <p>In your Google email Settings, go to the Accounts tab/section and make &ldquo;default&rdquo; an account other than your Gmail/Google Apps account. This will cause Google&rsquo;s SMTP server to re-write the From field with whatever address you enabled as the default Send mail as address.</p>
+                        <p>Google limits the amount of mail a user can send, via its portable SMTP server. This limit restricts the number of messages sent per day to 99 emails; and the restriction is automatically removed within 24 hours after the limit was reached.</p>
+                  </section>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <section id="email-templates">
+                        <div class="page-header">
+                            <h1>20. Email Templates</h1>
+                            <a href="javascript:;">To top <i class="icon-arrow-up"></i></a>
+                        </div>
+                      <div>
+                          <div>
+                            <div>
+                              <div>
+                                <p>The email templates allow you to customize the messages that go out to your customers when actions occur inside Script Cobrança. Email that goes out from Script Cobrança can be customized from here.</p>
+                                <p>To edit an email template, go to <strong>Settings &gt; Email Templates</strong> and click over name or subject you want to change.</p>
+                                <p>All email variables is available in this format – {{variable_name}}</p>
+                                <p>For Example {{business_name}} will replace with your Business Name, Company Name. {{invoice_amount}} will replace with actual invoice amount when sending email.</p>
+                                <p>&nbsp;</p>
+                              </div>
+                            </div>
+                            <div>
+                              <div>
+                                <div><img src="assets/img/email-templates.jpeg" alt="email-templates"></div>
+                              </div>
+                            </div>
+                      <p>&nbsp;</p></div></div><div><div>
+                          </div>
+                        </div>
+                        <p>&nbsp;</p></section>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <section id="automation">
+                        <div class="page-header">
+                            <h1>21. Automation Settings</h1>
+                            <a href="javascript:;">To top <i class="icon-arrow-up"></i></a>
+                        </div>
+                        <div>
+                          <div>
+                            <p>You can tag a transaction, a Contact etc.</p>
+                            <p>You can tag a transaction or contact simply by typing the tag name. If tag is not available in database table, it will be created automatically.</p>
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            <div><img width="577" height="51" src="assets/img/set-tags.jpg" alt="set-tags"></div>
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            <p><strong>Deleting Tags:</strong> To Delete an Existing Tag Navigate to – Settings -&gt; Manage Tags then click Delete Button.</p>
+                          </div>
+                        </div>
+                        <p>&nbsp;</p></section>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="span12">
+                    <section id="reports">
+                        <div class="page-header">
+                            <h1>22. Reports</h1>
+                            <a href="javascript:;">To top <i class="icon-arrow-up"></i></a>
+                        </div>
+                        <p><strong>In Script Cobrança All Reports will be generated automatically based on your transactions.</strong></p>
+                        <p><strong>Available Reports:</strong></p>
+                        <p><strong>Account Statement:</strong>  This will generate Account Statement based on Selected Account. The Statement can also be exported as pdf &amp; Printer friendly.</p>
+                        <p><strong>Reports by Date:</strong>  You can navigate all transaction activity of selected date with this page.</p>
+                        <p><strong>Income Reports:</strong> Reports for Income.</p>
+                        <p><strong>Expense Reports:</strong> Reports for Expense.</p>
+                        <p><strong>Income Vs Expense:</strong>  Automatically generated snapshot of your income &amp; expense, so that you can compare.</p>
+                        <p><strong>All Income:</strong> This page will show your all income</p>
+                        <p><strong>All Expense:</strong> This page will show your all expense</p>
+                        <p><strong>All Transaction:</strong> This page will show your all transactions (Income &amp; Expense Both)</p>
+                        <p><br>
+                            <br>
+                        </p>
+
+
+
+                    </section>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="span12">
+                    <section id="utilities">
+                        <div class="page-header">
+                            <h1>23. Utilities</h1>
+                            <a href="javascript:;">To top <i class="icon-arrow-up"></i></a>
+                        </div>
+                      <div>
+                          <div>
+                            <p><strong>Activity Log:</strong> Users activity logs will be appeared here including date, ip, descriptions, user id etc. You can use this for auditing. To Access activity log go to Utilities -&gt; Activity Log</p>
+                            <p><strong>Email Message Log:</strong> All outgoing emails will be stored in the database &amp; you will be able to access this from here. To Access email message log go to Utilities -&gt; Email Message Log</p>
+                            <p><strong>Database Status:</strong> You can check database status also you can download database backup from here. To Access database status go to Utilities -&gt; Database Status</p>
+                      </div></div><div><div>
+                          </div>
+                        </div>
+                        <p>&nbsp;</p></section>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <section id="upgrades">
+                        <div class="page-header">
+                            <h1>24. Upgrades/Maintenance</h1>
+                            <a href="javascript:;">To top <i class="icon-arrow-up"></i></a>
+                        </div>
+                      <div>
+                          <div>
+                            <p>We always recommend staying up-to-date with Script Cobrança in order to benefit from the latest development and improvements.</p>
+                            <p>Upgrading will not break your existing data &amp; you will be able to upgrade any version to any version. Upgrading is Free. Please follow the upgrading instructions for each release. You can download latest copy of Script Cobrança from CodeCanyon.</p>
+                      </div></div><div><div>
+                          </div>
+                        </div>
+                        <p>&nbsp;</p></section>
+                </div>
+            </div>
+            
+            
+
+
+            
+
+            
+          <div class="row">
+            <div class="span12">
+            <section id="definitions">
+            <div class="page-header">
+                <h1>25. Definitions</h1>
+                <a href="javascript:;">To top <i class="icon-arrow-up"></i></a>
+            </div>
+            
+            <table class="table table-bordered table-striped" width="600">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td width="300">Accounting</td>
+                <td>The systematic and comprehensive recording of financial transactions pertaining to a business.
+                    Accounting also refers to the process of summarizing, analyzing and reporting these transactions.
+                    The financial statements that summarize a large company's operations, financial position and
+                    cash flows over a particular period are a concise summary of hundreds of thousands of
+                    financial transactions it may have entered into over this period.</td>
+
+            </tr>
+
+            <tr>
+                <td width="300">Transactions</td>
+                <td>An instance of buying or selling something. In this software you can add transaction for any event like - Income
+                (deposit), Expense, Transfer between two accounts. </td>
+
+            </tr>
+            <tr>
+                <td width="300">Income</td>
+                <td>Money received for work, service or through investments.</td>
+
+            </tr>
+            <tr>
+                <td width="300">Expense</td>
+                <td>The cost incurred in or required for something.</td>
+
+            </tr>
+            <tr>
+                <td width="300">Recurring / Repeating</td>
+                <td> Recur means occur again periodically or repeatedly.
+                In this software, you can input all your future transactions for both income and expense.
+                For example, let's say you are paying an amount every month to X provider for internet bill. So you can put this
+                in Repeating Expense. It will be shown on your Expense calendar.</td>
+
+            </tr>
+            <tr>
+                <td width="300">Payee</td>
+                <td>A person to whom money is paid or is to be paid.</td>
+
+            </tr>
+            <tr>
+              <td>Payer</td>
+              <td>A company or someone who pays a bill for products or services received</td>
+            </tr>
+            <tr>
+              <td>Transfer</td>
+              <td>A transfer of funds from one account to another.</td>
+            </tr>
+            <tr>
+              <td>Balance Sheet</td>
+              <td>A financial statement that summarizes all accounts.</td>
+            </tr>
+            <tr>
+              <td>Product</td>
+              <td>Item offered for sale. A product can be a service or an item. It can be physical or in virtual or cyber form.</td>
+            </tr>
+            <tr>
+              <td>Service</td>
+              <td>Work that is done for others as an occupation or business.</td>
+            </tr>
+            <tr>
+                <td width="300">Localization</td>
+                <td>The process of adapting a product or service to a particular language, culture, and desired local “look-and-feel.”</td>
+
+            </tr>
+            <tr>
+              <td>TAX</td>
+              <td>A fee charged (“levied”) by a government on a product, income, or activity.</td>
+            </tr>
+
+
+            </tbody>
+            </table>
+            </section>
+            </div>
+            </div>
+
+
+
+
+            <div class="row">
+                <div class="span12">
+                </div>
+            </div>
+        </div>
+        <!-- END -->
+        <footer class="footer">
+        </footer>
+        <!-- Le javascript
+            ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/js/jquery-1.8.3.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/google-code-prettify/prettify.js"></script>
+        <script src="assets/js/application.js"></script>
+    </body>
+</html>

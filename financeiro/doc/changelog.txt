@@ -1,0 +1,205 @@
+V: 4.3.0 Date: July 22, 2016
+
+Fixed: An issue with rendering invoice
+Fixed: Use avatar is not showing when uploading user avatar
+Updated: French language file [ By- Jérôme Lille - http://www.lije-creative.com ]
+New: URL Rewriting. [ Setting -> General Setting. Experimental feature, please do not enable on Live server for now, need more testing ]
+
+V: 4.2.0 Date: July 21, 2016
+* Fixed: An issue with updating from previous version
+* New: Supports action hooks for customization - For details: https://cloudonex.github.io/hooks/
+* New: Quote Email can be send to CC and BCC
+* New: Quote can be attached as PDF in email
+* New: Filter Search option in quotes
+* Fixed: Now it's possible to add Contact / Customer with same name
+* New: Count invoice next to Invoice Tab in Contact Profile
+* Added: Dutch language file [ Author: Marcel13 ]
+* New: Advanced Currency formatting [ Setting -> Localisation ]
+
+
+V: 4.1.0 Date: July 12, 2016
+
+* New: Export Contacts CSV
+* New: Import Contacts / Clients from CSV File
+* New: Invoices CSV Export
+* New: Transactions CSV export
+* New: Attach PDF Invoice in email
+* New: Send email as Cc and Bcc when sending invoice email.
+* Added label color in invoice list based on invoice status
+* Fixed an issue with Reports by date
+* Added Thai Language Support
+* Added new font for PDF library
+* Updated Contacts Profile with faster loading
+* Rearranged Contacts Profile Tab
+* Adding Contacts ajax is more faster than before
+* Adding Custom Contact field ajax is more faster than before
+* Added new option to assign group for Contacts when adding Contacts
+* Added new menu under CRM named Groups to manage groups
+* New layout for Adding Customer / Contact form
+* New layout for wysiwyg editor for email sending, email templates editor
+* Updated ajax email template editor
+* New: Added Client Portal
+* New: Client Login / Registration
+* Added option to choose default landing page [ Admin Login or Client Login page ]
+* Send Group Email
+
+
+V: 4.0.0 Date: June 17, 2016
+
+* Added Option to choose from Light / Dark theme from Settings. Settings -> General Settings [ -> Style ]
+* Added Option to Advanced Searching and Sorting the Contacts / Customers. [ To enable Contacts -> List Contacts and Then Set view mode to Search from top right corner ]
+* Added Quick Links in Dashboard
+* Added Default Mini Navbar option in Settings -> User Interface
+* Added Option to Hide Footer Copyright Section in Settings -> User Interface
+* Updated Braintree Payment Gateway Library and Documentation. [ http://www.ibilling.io/payment-gateways/ ]
+* Added Support for PHP composer for development
+* Added Option to Advanced Searching and Sorting Invoices. [ To Filter Invoices Sales -> Invoices [ Then Click Filter Button ]
+* Added Option for adding Account Number, Contact Person, Phone, Internet Banking URL for Bank / Cash Account. [ If you add Internet banking URL, a button will be appeared in Bank & Cash -> List Accounts to access the URL ]
+* Optimized php / javascript / css codes
+
+
+
+
+V: 3.6.0 Date: November 16, 2015
+
+- This update contains stability improvements and bug fixes
+* Added: CRON Log Page [ Can be Access from Utilities -> CRON Log ]
+* Added: Recent Invoice Widget in the Dashboard
+* Added: Servian Language File [ Contributed by User: Aleksandar Keta ( alexk66 ) ]
+* Added: Turkish Language File [ Contributed by User: ilyasozkurt ( http://www.softhash.com/community/member/271-ilyasozkurt ) ]
+* Fix: Issue with calculating TAX when adding item with quantity more then One
+
+V: 3.5.0 Date: September 16, 2015
+
+- This update contains stability improvements and bug fixes
+* Added: Payment Gateway Name Can be edited now
+* Added: SALT on Password Encryption Method
+* Added: More API Methods- Documentation is available here - http://www.ibilling.io/api-documentation/
+* Updated: Bank / Cash Payment Gateway [ Contributed by User: Kurando ]
+* Fix: An issue with CSS [ Contributed by User: Kurando ]
+
+V: 3.4.0 Date: September 11, 2015
+
+- This update contains stability improvements and bug fixes
+* Fix: An Issue with Schema update algorithm
+* Fix: An Issue with Discount and Tax for Invoice Creation
+* Fix: Company Name is not saving when Adding Contact through Invoice Creation Page
+* New: Introducing New Invoice Creation Method [Can be enable /disable from Settings -> General Settings]
+
+
+V: 3.3.0 Date: September 04, 2015
+
+- This update contains stability improvements and bug fixes
+* New: Added Option for Default Invoice Terms Can be Add from Settings -> General Settings
+* New: Added a Sample Plugin Named "Notes" in the Plugin Directory, Plugin Creation Documentation is available here- http://www.ibilling.io/plugin-development/
+* New: WYSIWYG editor for Adding Invoice Terms / Invoice Footer Contents
+* Added Automatic Invoice Creation Email Notification to Client [ To Enable Go to Settings -> General Settings, You will find this option in Additional Settings Section ]
+* Added Option to Delete Plugin from Admin Panel
+* Fixed few minor localisation's issue
+
+V: 3.2.0 Date: August 26, 2015
+
+- This update contains stability improvements and bug fixes
+* Fixed: Translation in various pages
+* New: Added few more API methods which will be discussed on the iBilling forum
+* Added: French Language File. [ Author: Jérôme Lille | Author Email: info@lije-creative.com | Author Website: http://www.lije-creative.com ]
+
+V: 3.1.0 Date: August 04, 2015
+
+* Fixed: Translation in various pages
+* Fixed: An issue with Quote
+* Updated: Some javascript libraries
+* Updated: Plugin API
+* Fixed: JSON error for non english character in Email Message Logs & Activity Logs
+* New: Available option to upload Profile Picture for Admin. To Access, Go To My Account -> Edit Profile
+
+V: 3.0.0 Date: July 22, 2015
+
+* New: API Support to connect with other application to Access - Go to Settings -> API Access
+* Fixed: Translation in various pages
+* Fixed: Custom Invoice Prefix and Number in List Invoices Page
+* Fixed: Issue with TAX when editing Quote
+* Fixed: Issue with PDF Quote
+* Fixed: UTF-8 Email Sending Issue
+* Added: Contacts View Mode - Tables & Cards
+* Added: Spanish Language File [Translated By - Diego Mora and David Calles]
+* Dev: sysfrm/vendors renamed to syfrm/lib
+* Dev: Added PHP composer autoload support - Added ./vendor/
+* Updated: Localisation file for Arabic Language [ By - Omar Harbi, Originally Translated By : SERAG ALZENTANI ]
+* Updated: Plugin Support
+* Fixed: An issue with Quote Email Template
+* Updated: Latest version to various jQuery Plugins
+* Updated: Stripe Payment Gateway
+* Added: Invoice Number in template variable in invoicing subject
+* Updated: Activity Events listeners in various actions for Plugin Development
+* Added: Hooks listeners, Routing directly to Plugin etc.
+* Updated: Database Scheema update algorithm
+
+V: 2.4.0 Date: June 18, 2015
+
+* New Feature: Create & Manage Quote / Estimate / Propsal for Customer [Can be enable / disable this feature from Settings -> Choose Features]
+* Added: Plugin Support to Extend iBilling Functionality
+* Added: CCAvenue Payment Gateway ( Specially thanks to - Avinash Joshi - http://codecanyon.net/user/iboomz )
+* Added: Braintree Payment Gateway (Created by- Bernie Clark - http://codecanyon.net/user/bcaa8ra )
+* Added: Choose Features option to enable / disable Features
+* Fixed: An issue showing categories when transferring fund between accounts
+* Fixed: An issue with Paypal IPN
+* Fixed: Issues with Localisations - Brazilian Portuguese Language - specially thanks to: sistemasbrasileiros [ http://codecanyon.net/user/sistemasbrasileiros ]
+* Fixed: An issue with date paginator - Incorrect Date Format
+* Fixed: An issue with Invoice Discount Modal
+* Fixed: Number & Date Formatting in various pages
+* Fixed: An issue with scheema update algorithm 
+
+V: 2.3.0 Date: June 18, 2015
+
+* Fixed: Payment Gateway Button will not be shown if all the payment gateways is disabled
+* Fixed: An issue showing categories when transferring fund between accounts
+* Fixed: An issue with Paypal IPN
+* Fixed: An issue with Localisations
+
+V: 2.2.0 Date: June 8, 2015
+
+* New: Added Company Name for Invoicing and CRM [If Company Name is not blank in CRM contacts this will be shown in Invoice & Contact Name will be shown as ATTN: [Contact Name]
+* New: Added PDO set names utf8 in ORM
+* New: New design & layout for PDF invoice
+* New: Added option in settings to choose font for PDF
+* New: Added Language file Brazilian Portuguese Language, specially thanks to: sistemasbrasileiros [ http://codecanyon.net/user/sistemasbrasileiros ]
+* New: Added Language file for Arabic Language, specially thanks to: sergioali [ http://codecanyon.net/user/sergioali ]
+* New: Added Invoice Public URL link in View Invoice from Admin
+* New: Added row's in invoicing so that it can be displayed "Total Paid" & "Amount Due" for Partial Payment
+* Fixed: Showing full amount in payment gateway for Partially Paid Invoice
+* Fixed: PDF Showing question mark in Currency Code if used localised currency code
+
+V: 2.1.0 Date: June 4, 2015
+
+* New: Custom Contact Fields for CRM. To Add Custom Contact Fields, Added Menu Settings -> Custom Contact Fields
+* New: Added Option to show Custom Contact Fields in Invoice (e.g. VAT Number for EU Customers)
+* New: Added option for Automatic Database Schema Update for Upgrading iBilling
+* New: Added "Related Transactions" Section in Invoice Client Preview
+* New: Added Option to enable / disable Page loading Animation
+* New: RTL Support (Can be enable / disable from Settings -> General Setting [User Interface Section]
+* New: Discount option in Invoice
+* New: Few more invoice template variables (Lists available here- http://www.ibilling.io/email-templates/)
+* New: New Optimized PDF library for better PDF creation
+* Fixed: Wrong currency format in Add Payment to Invoice
+* Fixed: Wrong currency format in Invoice Email
+* Fixed: An issue with User Access Control
+
+
+V: 2.0.0 Date: May 19, 2015
+
+* New: UI & UX improvement with ajax page loading
+* New: Added Option to Search Customers from Top Navigation
+* New: Added Activity Log Notifications with Ajax Loader
+* New: Added Option to Create Customer Directly from Invoice Creation Page
+* New: Set Currency Format from Settings -> Localisation
+* New: Added Option to change system charset
+* New: Added Option to set invoice auto increment value
+* New: Added Option to add Invoice Prefix before Invoice Number
+
+Date April 29, 2015
+
+* Fixed issue with invoice pdf generation wrong amount
+* Fixed issue with invoice partial payment
+* Fixed number formating issue with negetive number in balances
+* Fixed issue with item selection when editing invoice

@@ -1,0 +1,20 @@
+.cor1, .cor2, .cor3 {padding: 8px}
+
+.cor1 {
+	background-color: #F7F7F7;
+	font-style: oblique;
+}
+
+.cor2 {
+	background-color: #6f946b;
+	font-style: oblique;
+	color: #ffffff;
+}
+
+.cor3{
+	background-color: #DBEFF7; 	
+}
+
+.cor4{
+	background-color: #DBEFF7; 	
+}
